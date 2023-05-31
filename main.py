@@ -1,7 +1,5 @@
-def create_squared_dict(**kwargs):
-    squared_dict = {}
-    for key, value in kwargs.items():
-        squared_dict[key] = value ** 2
-    return squared_dict
-result = create_squared_dict(a=2, b=3, c=4)
-print(f'Словник з квадратами значень: {result}')
+def get_odd_numbers(*args):
+    odd_numbers = [num for num in args if num % 2 != 0]
+    return odd_numbers
+result = get_odd_numbers(1, 2, 3, 4, 5, 6)
+print(f'Список непарних чисел: {result}')
